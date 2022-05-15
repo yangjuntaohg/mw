@@ -1,7 +1,7 @@
 # coding=utf-8
 import pymysql
-from config import con
-from robottest import robot_test
+from nickname.scripts.config import con
+from nickname.scripts.robottest import robot_test
 
 
 def nickname(uids):
