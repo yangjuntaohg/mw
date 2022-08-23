@@ -1,4 +1,15 @@
+#1
+rs = [{'id': 5719969}, {'id': 5719968}]
+idlist=[rs[i]['id'] for i in range(30)]
+print(idlist)
 
+idls=[]
+for i in range(30):
+    idls.append(rs[i]['id'])
+print(idls)
+
+
+#2
 js={
 "result": 0,
 "message": "success",

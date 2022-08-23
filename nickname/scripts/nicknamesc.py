@@ -10,7 +10,7 @@ conn = pymysql.connect(host=con['host'], port=con['port'],
                        database=con['database'])
 cursor = conn.cursor(pymysql.cursors.DictCursor)
 
-uids=(40564844,43560899,51712035)
+uids=(40564844,43560899,51712035,64435157,75263096)
 usr=[]
 
 # 执行
