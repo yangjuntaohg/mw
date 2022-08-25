@@ -1,7 +1,9 @@
 import requests
 from scripts.getcollist import getcollist
 import json
-
+import os
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath('/Users/edy/PycharmProjects/mw/scripts'))))
 
 def checkname_single(first_name):
     url = 'http://api-sandbox.camproapp.com/api/Profile/FirstName/check'
@@ -23,7 +25,7 @@ def checkname_batch(path):
         # print(data)
         res=json.loads(requests.post(url=url,data=data).text)
         # print(res,'\n')
-        if 'status' in res['data'] and res['data']['status'] is False:
+        if 'status' in res['data'] and res['data']['status'] is True:
             continue
         else:
             nottrue[i]=res

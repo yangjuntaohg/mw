@@ -1,5 +1,5 @@
-
 import xlrd
+
 
 def getcollist(path):
 
@@ -12,6 +12,7 @@ def getcollist(path):
     #获取表格列生成list
     table_col = table.col_values(colx=0, start_rowx=0, end_rowx=None)
     return table_col
+
 
 if __name__ == '__main__':
     path='/Users/edy/Desktop/xls.xls'

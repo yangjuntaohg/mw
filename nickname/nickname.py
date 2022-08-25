@@ -1,7 +1,7 @@
 # coding=utf-8
 import pymysql
-from huafang.service.nickname.config.config import con
-from huafang.service.nickname.common.robot import sendmsg
+from nickname.config.config import con
+from nickname.common.robot import sendmsg
 
 
 def nickname(uids):
